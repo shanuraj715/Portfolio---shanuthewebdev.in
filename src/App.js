@@ -2,7 +2,6 @@ import './App.css';
 import { useState, useEffect } from 'react'
 import ReactTooltip from 'react-tooltip';
 
-// CSS Files
 import './assets/css/layout.css'
 
 import {
