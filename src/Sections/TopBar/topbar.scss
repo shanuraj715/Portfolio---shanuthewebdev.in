@@ -1,0 +1,140 @@
+@import "../../assets/css/variables.scss";
+
+.top-bg-clr {
+  &:before {
+    content: "";
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background: radial-gradient(
+      ellipse at right top,
+      rgba(10, 61, 98, 1) 15%,
+      transparent,
+      transparent
+    );
+  }
+}
+.section1 {
+  padding-top: 50px;
+  min-height: 80vh;
+  position: relative;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(220px, 1fr));
+  align-content: center;
+  justify-content: start;
+  gap: 80px;
+
+  div {
+    flex-grow: 1;
+  }
+}
+
+.section1-img-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: glower 20s linear infinite;
+
+  div {
+    display: inline-block;
+    max-width: 65vw;
+    max-height: 75vw;
+
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}
+
+.section1-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.section1-over {
+  margin-top: 0px;
+  order: 2;
+  h1 {
+    font-size: 3rem;
+    background-image: linear-gradient(45deg, fuchsia, orangered);
+    color: transparent;
+    background-clip: text;
+  }
+
+  h2 {
+    color: #5ad7d5;
+    opacity: 0.8;
+  }
+  p {
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: #000;
+  }
+}
+@supports (background-clip: text) {
+  h1 {
+    background-image: linear-gradient(45deg, fuchsia, orangered);
+    color: transparent;
+    background-clip: text;
+  }
+}
+
+@media screen and (min-width: $screen2-width) {
+  .section1-img-cont {
+    div {
+      max-width: 400px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen3-width) {
+  .section1-over {
+    margin-top: 150px;
+    order: 1;
+  }
+  .section1 {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 30px;
+  }
+  .section1-img-cont {
+    margin-top: 30px;
+    order: 2;
+  }
+}
+
+@media screen and (min-width: $screen4-width) {
+  .section1-over {
+    text-align: left;
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-left: initial;
+      margin-right: initial;
+      font-size: 1.14rem;
+      color: rgba(10, 61, 98, 0.8);
+      max-width: 600px;
+    }
+  }
+  .section1-img-cont {
+    div {
+      max-width: 350px;
+    }
+  }
+}

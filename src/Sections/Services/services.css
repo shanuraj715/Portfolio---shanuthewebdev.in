@@ -1,0 +1,29 @@
+.services-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(220px, 1fr))[1];
+      grid-template-columns: repeat(1, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .services-cards {
+    -ms-grid-columns: (minmax(400px, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(400px, 1fr));
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services-cards {
+    -ms-grid-columns: (minmax(420px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(420px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services-cards {
+    -ms-grid-columns: (minmax(350px, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(350px, 1fr));
+  }
+}
+/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,48 @@
+@import "../../assets/css/variables.scss";
+
+.footer-container {
+  background-color: #3d3d3d;
+  border-top: solid 2px #f1c40f;
+  position: relative;
+  padding: 30px 0;
+  div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    justify-content: center;
+    color: white;
+
+    strong {
+      color: #f1c40f;
+      letter-spacing: 1px;
+    }
+  }
+
+  &:before,
+  &::after {
+    width: 50%;
+    content: "";
+    top: -2px;
+    height: 2px;
+    position: absolute;
+  }
+
+  &:before {
+    left: 0;
+    background-image: linear-gradient(to right, white, transparent);
+  }
+
+  &:after {
+    right: 0;
+    background-image: linear-gradient(to right, transparent, white);
+  }
+}
+
+@media screen and (min-width: $screen2-width) {
+  .footer-container {
+    div {
+      flex-direction: row;
+    }
+  }
+}

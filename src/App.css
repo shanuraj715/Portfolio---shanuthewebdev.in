@@ -1,38 +1,91 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+*::-webkit-input-placeholder {
+  color: #888;
+  opacity: 0.7;
+}
+
+*:-ms-input-placeholder {
+  color: #888;
+  opacity: 0.7;
+}
+
+*::-ms-input-placeholder {
+  color: #888;
+  opacity: 0.7;
+}
+
+*::placeholder {
+  color: #888;
+  opacity: 0.7;
+}
+
+body {
+  background-color: #f3f3f3;
+  font-family: "Ubuntu", sans-serif;
+  max-width: 100vw;
+}
+
+.app-container {
+  max-height: 100vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 320px) {
+  .app-container {
+    display: initial;
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.align-center {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.justify-center {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.skill-progressbar {
+  margin: 100px auto;
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */

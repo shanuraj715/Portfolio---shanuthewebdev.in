@@ -1,0 +1,15 @@
+@import '../../assets/css/variables.scss';
+
+.sidebar{
+    background: rgba(34, 112, 147, 1.0);
+    min-height: 100vh;
+    max-height: 100vh;
+    position: initial !important;
+    display: none;
+}
+
+@media screen and (min-width: $screen1-width) {
+    .sidebar{
+        position: absolute !important;
+    }
+}

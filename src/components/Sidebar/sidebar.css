@@ -1,0 +1,14 @@
+.sidebar {
+  background: #227093;
+  min-height: 100vh;
+  max-height: 100vh;
+  position: initial !important;
+  display: none;
+}
+
+@media screen and (min-width: 320px) {
+  .sidebar {
+    position: absolute !important;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */

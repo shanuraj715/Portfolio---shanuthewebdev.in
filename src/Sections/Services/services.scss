@@ -1,0 +1,27 @@
+@import '../../assets/css/variables.scss';
+
+
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat( 1, minmax(220px, 1fr) );
+    gap: 1rem;
+}
+
+
+@media screen and (min-width: $screen2-width) {
+    .services-cards{
+        grid-template-columns: repeat( 1, minmax(400px, 1fr) );
+    }
+}
+
+@media screen and (min-width: $screen4-width) {
+    .services-cards{
+        grid-template-columns: repeat( 2, minmax(420px, 1fr) );
+    }
+}
+
+@media screen and (min-width: $screen5-width) {
+    .services-cards{
+        grid-template-columns: repeat( 3, minmax(350px, 1fr) );
+    }
+}

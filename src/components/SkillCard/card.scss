@@ -1,0 +1,289 @@
+@import "../../assets/css/variables.scss";
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s !important;
+  -webkit-transition: all 0.5s !important;
+  -moz-transition: all 0.5s !important;
+  -ms-transition: all 0.5s !important;
+  -o-transition: all 0.5s !important;
+  div {
+    // padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    img {
+      height: 75px;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05) !important;
+    -webkit-transform: scale(1.05) !important;
+    -moz-transform: scale(1.05) !important;
+    -ms-transform: scale(1.05) !important;
+    -o-transform: scale(1.05) !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}
+
+.skill-react:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(0, 216, 255, $skill-card-bg-opacity)
+  );
+}
+
+.skill-php:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(97, 129, 182, $skill-card-bg-opacity)
+  );
+}
+
+.skill-html5:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(227, 79, 38, $skill-card-bg-opacity)
+  );
+}
+
+.skill-css3:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(21, 114, 182, $skill-card-bg-opacity)
+  );
+}
+
+.skill-premiere-pro:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(0, 0, 91, $skill-card-bg-opacity)
+  );
+}
+
+.skill-expressjs:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(61, 61, 62, $skill-card-bg-opacity)
+  );
+}
+
+.skill-bootstrap:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(89, 41, 78, $skill-card-bg-opacity)
+  );
+}
+
+.skill-fl-studio:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(254, 144, 13, $skill-card-bg-opacity)
+  );
+}
+
+.skill-javascript:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(247, 223, 30, $skill-card-bg-opacity)
+  );
+}
+
+.skill-jquery:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(8, 104, 172, $skill-card-bg-opacity)
+  );
+}
+
+.skill-mongodb:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(70, 160, 55, $skill-card-bg-opacity)
+  );
+}
+
+.skill-mysql:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(0, 97, 138, $skill-card-bg-opacity)
+  );
+}
+
+.skill-nodejs:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(65, 137, 62, $skill-card-bg-opacity)
+  );
+}
+
+.skill-wordpress:hover {
+  background-image: radial-gradient(
+    transparent,
+    rgba(0, 116, 154, $skill-card-bg-opacity)
+  );
+}
+
+.skill-card-full {
+  position: fixed;
+  z-index: 200;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-color: rgba(61, 61, 61, 0.6);
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card-full-dc {
+  min-height: 400px;
+  min-width: 250px;
+  max-height: 78vh;
+  max-width: 70vw;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: skill-card-open-animation 0.3s ease-in-out;
+  -webkit-animation: skill-card-open-animation 0.3s ease-in-out;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+@keyframes skill-card-open-animation {
+  from {
+    transform: translateY(50px) scale(0.98) translateZ(500px);
+    -webkit-transform: translateY(50px) scale(0.98) translateZ(500px);
+    -moz-transform: translateY(50px) scale(0.98) translateZ(500px);
+    -ms-transform: translateY(50px) scale(0.98) translateZ(500px);
+    -o-transform: translateY(50px) scale(0.98) translateZ(500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1) translateZ(0);
+    -webkit-transform: translateY(0) scale(1) translateZ(0);
+    -moz-transform: translateY(0) scale(1) translateZ(0);
+    -ms-transform: translateY(0) scale(1) translateZ(0);
+    -o-transform: translateY(0) scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.skill-card-full-dc-ra {
+  animation: skill-card-close-animation 0.3s ease-in-out;
+  -webkit-animation: skill-card-close-animation 0.3s ease-in-out;
+}
+
+@keyframes skill-card-close-animation {
+  from {
+    transform: translateY(0) scale(1) translateZ(0);
+    -webkit-transform: translateY(0) scale(1) translateZ(0);
+    -moz-transform: translateY(0) scale(1) translateZ(0);
+    -ms-transform: translateY(0) scale(1) translateZ(0);
+    -o-transform: translateY(0) scale(1) translateZ(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(50px) scale(0.98) translateZ(500px);
+    -webkit-transform: translateY(50px) scale(0.98) translateZ(500px);
+    -moz-transform: translateY(50px) scale(0.98) translateZ(500px);
+    -ms-transform: translateY(50px) scale(0.98) translateZ(500px);
+    -o-transform: translateY(50px) scale(0.98) translateZ(500px);
+    opacity: 0;
+  }
+}
+
+.scf-cbb {
+  display: flex;
+  font-size: 1.5rem;
+  padding: 10px 0 10px 0;
+  color: white;
+  background-color: #192a56;
+  position: relative;
+  z-index: 200;
+  p {
+    flex-grow: 1;
+  }
+  span {
+    padding-right: 30px;
+  }
+}
+
+.sc-bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  img {
+    width: 80%;
+    max-width: 700px;
+    max-height: 450px;
+    opacity: 0.06;
+  }
+}
+
+.sc-data-container {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0 5px;
+  gap: 20px;
+  div {
+    span {
+      font-size: 11rem;
+    }
+  }
+}
+
+@media screen and (min-width: $screen3-width) {
+  .skill-card-full-dc {
+    min-height: 500px;
+    min-width: 600px;
+    max-height: 78vh;
+    max-width: 70vw;
+  }
+}
+
+@media screen and (min-width: $screen5-width) {
+  .skill-card-full-dc {
+    min-height: 500px;
+    min-width: 600px;
+    max-height: 78vh;
+    max-width: 70vw;
+  }
+}
+
+@media screen and (min-width: $screen6-width) {
+  .skill-card-full-dc {
+    min-height: 500px;
+    min-width: 600px;
+    max-height: 78vh;
+    max-width: 70vw;
+  }
+}
