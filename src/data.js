@@ -18,12 +18,14 @@ import JavaScriptIcon from './assets/images/logo/javascript.svg'
 import JqueryIcon from './assets/images/logo/jquery-ar21.svg'
 import MongoDbIcon from './assets/images/logo/mongodb.svg'
 import MySqlIcon from './assets/images/logo/mysql-official.svg'
-import NodeJsIcon from './assets/images/logo/nodejs.svg'
+import NodeJsIcon from './assets/images/logo/node js.svg'
 import WordpressIcon from './assets/images/logo/wordpress-ar21.svg'
+import NextJs from './assets/images/logo/next-js.svg'
+import Sass from './assets/images/logo/sass-1.svg'
 
 
 const data = {
-    topbar:{
+    topbar: {
         description: <>I am a professional <strong>Web Developer</strong> with experience for over 3 years. My expertise is to create <strong>Website Design</strong>. I have highly skilled team for developing Web Apps. You can contact us to develop your <strong>E-Commerce Website, Personal Portfolio Website, Blogging Website, College Projects and also for Content Management System. We also offer support and maintanance for your project. </strong></>
     },
     social: [
@@ -32,7 +34,7 @@ const data = {
             icon: "fab fa-whatsapp",
             iconColor: "#25D366",
             hoverColor: "",
-            url: "https://wa.me/919877936035",
+            url: "https://wa.me/918271890685",
         },
         {
             title: "e-Mail",
@@ -116,6 +118,8 @@ const data = {
     ],
     skills: [
         { "iconTitle": "React Js", "path": ReactIcon, classes: "skill-react", rating: 8.5 },
+        { "iconTitle": "Next Js", "path": NextJs, classes: "skill-next", rating: 8.5 },
+        { "iconTitle": "Sass", "path": Sass, classes: "skill-sass", rating: 7.4 },
         { "iconTitle": "Php", "path": PhpIcon, classes: "skill-php", rating: 7.2 },
         { "iconTitle": "Html 5", "path": HtmlIcon, classes: "skill-html5", rating: 8.5 },
         { "iconTitle": "Css 3", "path": CssIcon, classes: "skill-css3", rating: 7.8 },

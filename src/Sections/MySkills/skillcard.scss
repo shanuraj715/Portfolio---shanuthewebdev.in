@@ -10,12 +10,13 @@
   padding-top: 10px;
   padding-bottom: 50px;
   max-width: 100vw;
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 @media screen and (min-width: $screen2-width) {
   .skill-card-container {
     grid-template-columns: repeat(2, 1fr) !important;
+    overflow: visible;
   }
 }
 

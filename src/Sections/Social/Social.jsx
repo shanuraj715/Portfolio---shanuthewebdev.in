@@ -20,6 +20,7 @@ function Social() {
               data-aos="fade-left"
               data-aos-delay={index * 100}
               data-aos-anchor-placement="top-bottom"
+              rel="noreferrer"
             >
               <i className={item.icon}></i>
             </a>

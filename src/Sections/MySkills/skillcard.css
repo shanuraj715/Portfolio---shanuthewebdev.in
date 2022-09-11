@@ -14,13 +14,14 @@
   padding-top: 10px;
   padding-bottom: 50px;
   max-width: 100vw;
-  overflow: hidden !important;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 576px) {
   .skill-card-container {
     -ms-grid-columns: (1fr)[2] !important;
         grid-template-columns: repeat(2, 1fr) !important;
+    overflow: visible;
   }
 }
 

@@ -57,6 +57,14 @@
   background-image: radial-gradient(transparent, rgba(0, 216, 255, 0.4));
 }
 
+.skill-next:hover {
+  background-image: radial-gradient(transparent, rgba(44, 58, 71, 0.4));
+}
+
+.skill-sass:hover {
+  background-image: radial-gradient(transparent, rgba(205, 103, 153, 0.4));
+}
+
 .skill-php:hover {
   background-image: radial-gradient(transparent, rgba(97, 129, 182, 0.4));
 }

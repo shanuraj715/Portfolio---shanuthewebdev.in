@@ -18,6 +18,7 @@ import Social from './Sections/Social/Social'
 import Contact from './Sections/ContactUs/ContactUs'
 import Footer from './Sections/Footer/Footer'
 import Header from './Sections/Header/Header'
+import SidebarSocial from './components/SidebarSocial/SidebarSocial'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -26,8 +27,9 @@ function App() {
     setTimeout(() => {
       setLoading(false)
     }, 2000)
+    
   }, [])
-
+  
   return (<>
     {loading ? <Preloader /> : (<div className="app-container">
       <Sidebar />
@@ -39,6 +41,7 @@ function App() {
         <SkillCard />
         <Contact />
         <Footer />
+        <SidebarSocial />
       </div>
       <ReactTooltip place="top" type="info" effect="float" className="custom-tooltp" />
       <Toaster />

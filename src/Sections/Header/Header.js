@@ -1,14 +1,13 @@
-import { useState } from 'react'
 import './header.css'
 import Logo from '../../assets/images/shanuthewebdev.png'
 
 function Header() {
 
     return (
-        <div className="container-fluid header">
+        <div className="container-fluid header"  data-aos="fade-down" data-aos-delay="400">
             <header className="container">
                 <div className="header-logo-cont">
-                    <a href="#"><img src={Logo} alt="" /></a>
+                    <a href="/"><img src={Logo} alt="" /></a>
                 </div>
                 <div className="humburger-cont">
                     <span className="">
@@ -29,7 +28,7 @@ function Header() {
                         <li onClick={() => {
                             window.scrollTo(0, document.getElementById('skills').offsetTop - 100)
                         }}><a>Skills</a></li>
-                        <li><a href="https://projects.techfacts007.in/04614004420.pdf" target="_blank">Download CV</a></li>
+                        <li><a href="https://projects.techfacts007.in/04614004420.pdf" target="_blank" rel="noreferrer">Download CV</a></li>
                         <li onClick={() => {
                             window.scrollTo(0, document.getElementById('cu').offsetTop - 150)
                         }}><a>Contact Me</a></li>

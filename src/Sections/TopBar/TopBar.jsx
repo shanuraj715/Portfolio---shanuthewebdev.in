@@ -1,28 +1,28 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./topbar.css";
-import ShanuRaj from "../../assets/images/shanu.png";
+import shanu from "../../assets/images/shanuthewebdev.jpg";
 import data from '../../data'
 
 function TopBar() {
   const [string, setString] = useState("");
   const str = "shanu_the_web_dev";
-  let index = 0;
+  let index = useRef(0);
   let length = str.length;
-  let direction = "forward";
+  let direction = useRef("forward");
 
   useEffect(() => {
     let interval = setInterval(() => {
-      if (direction === "forward") {
-        setString((prevState) => prevState + str[index]);
-        index = index + 1;
+      if (direction.current === "forward") {
+        setString((prevState) => prevState + str[index.current]);
+        index.current = index.current + 1;
       } else {
-        setString((prevState) => prevState.substring(0, index));
-        index = index - 1;
+        setString((prevState) => prevState.substring(0, index.current));
+        index.current = index.current - 1;
       }
-      if (index === length) direction = "backward";
-      if (index === -1) {
-        direction = "forward";
-        index = 0;
+      if (index.current === length) direction.current = "backward";
+      if (index.current === -1) {
+        direction.current = "forward";
+        index.current = 0;
       }
     }, 100);
 
@@ -30,19 +30,21 @@ function TopBar() {
       setString("");
       clearInterval(interval);
     };
-  }, []);
+  }, [length]);
 
   return (
     <div className="top-bg-clr container-fluid">
       <div className="section1 container">
         <div className="section1-over">
-          <h1>Shanu Raj</h1>
-          <h2>&nbsp;{string}</h2>
-          <p>{data.topbar.description}</p>
+          <h1 data-aos="zoom-in-right" data-aos-delay="200">Shanu Raj</h1>
+          <h2 data-aos="zoom-in-right" data-aos-delay="300">&nbsp;{string}</h2>
+          <p data-aos="zoom-in-right" data-aos-delay="400">{data.topbar.description}</p>
         </div>
         <div className="section1-img-cont">
-          <div>
-            <img src={ShanuRaj} className="section1-img" alt="" />
+          <div className="image-cont" data-aos="zoom-in-left">
+            <span className="image-top-left-border"></span>
+            <img src={shanu} className="section1-img" alt="" />
+            <span className="image-bottom-right-border"></span>
           </div>
         </div>
         {/* <div className=""></div> */}

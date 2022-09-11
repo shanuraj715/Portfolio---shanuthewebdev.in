@@ -29,8 +29,6 @@ function Card(prop) {
         onClick={() => setCardVisibility(1)}
         data-aos={prop.aosAnimName || "zoom-in-up"}
         data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        data-aos-anchor-placement="bottom-bottom"
       >
         <div>
           <img src={prop.icon} alt={prop.iconTitle} />
