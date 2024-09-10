@@ -1,3 +1,13 @@
+## Screenshots
+<img width="400" alt="Screenshot 2024-09-10 at 12 23 47 PM" src="https://github.com/user-attachments/assets/bc6b9d59-3356-42eb-85ff-db2d85afb557">
+<img width="400" alt="Screenshot 2024-09-10 at 12 24 12 PM" src="https://github.com/user-attachments/assets/9f52adc6-5498-4040-bd36-b66a578e18d4">
+<img width="400" alt="Screenshot 2024-09-10 at 12 24 54 PM" src="https://github.com/user-attachments/assets/13373008-a7a3-4494-8e7b-5d570cd90ab7">
+<img width="400" alt="Screenshot 2024-09-10 at 12 25 30 PM" src="https://github.com/user-attachments/assets/646c5b13-a8e3-4c03-887d-8619c10a1a01">
+<img width="400" alt="Screenshot 2024-09-10 at 12 25 53 PM" src="https://github.com/user-attachments/assets/2fc86d67-e800-4c55-8f2c-3a30494f54f0">
+
+## Live Demo
+[https://shanuthewebdev.in](https://shanuthewebdev.in)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
